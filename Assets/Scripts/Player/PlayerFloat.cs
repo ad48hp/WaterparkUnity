@@ -36,7 +36,7 @@ public class PlayerFloat : MonoBehaviour
     {
         if (isInWater)
         {
-            Debug.Log("InWater");
+            //Debug.Log("InWater");
             rb.linearVelocity = new Vector3(rb.linearVelocity.x, 0, rb.linearVelocity.z);
             rb.AddForce(Vector3.up * floatForce, ForceMode.Acceleration);
         }
